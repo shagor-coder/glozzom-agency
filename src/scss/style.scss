@@ -1,0 +1,253 @@
+@import '/dist/style.css';
+
+$primary-color: #ffffff;
+$icon-size: 50px;
+$f-weight: 500;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1440px;
+}
+
+#nav{
+    background:rgba(10, 50, 73, 0.911);
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    i{
+        padding: 5px;
+        color: $primary-color;
+       
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar-brand{
+        .d-inline {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .navbar-brand:hover{
+        text-decoration: none; 
+    }
+    .nav-item{
+        padding-left: 1rem;
+    }
+    .nav-link:hover{
+        text-decoration: none;
+    }
+    .nav-link:focus{
+        font-weight: bold;
+    }
+    .container a{
+        color: white;
+    }
+    .nav-item .nav-link{
+        color: #f5f4f4;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+#carousel-section{
+    z-index: 0;
+    top: 0;
+    position: static;
+    .img-fluid{
+        width: 100%;
+        height: 60vh;
+    }
+   .carousel-caption{
+       .btn{
+        border-radius: 0;
+       }
+       .display-4{
+            color: $primary-color;
+       }
+   }
+   @media (max-width:764px){
+    #carousel-section{
+        margin-bottom: 0;
+    }
+   }
+}
+   
+    
+
+
+#home-section{
+    background: rgba(0, 0, 0, 0.212);
+    h3{
+        color: #ffffff;
+    }
+    p{
+        color: #ffffff;
+        font-weight: 450;
+    }
+    i{
+        font-size: $icon-size;
+        color: #4b49cfa6;
+    }
+}
+#get-section{
+    padding-bottom: $icon-size;
+    background-image: url(../../img/image5.jpeg);
+    background-size: cover;
+    background-color: #000000b4;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    min-height: 385px;
+    .mt{
+        margin-top: 70px;
+        color: $primary-color;
+    }
+    @media (max-width: 575px){
+        .mt{
+            margin-top: 30px;
+        }
+    }
+}
+#info-section{
+    .col-md-6{
+        .btn-outline-dark{
+            border-radius: 0;
+            font-weight: 450;
+        }
+    }
+    @media (max-width: 767px){
+        .col-md-6{
+            text-align: center;
+        }
+        .btn{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+#video-section{
+    background: url(../../img/image6.jpeg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.507);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    min-height: 180px;
+    .col{
+       
+        .bi{
+            font-size: $icon-size;
+            color: $primary-color;
+            fill: $primary-color;
+            margin: 10px;
+        }
+        h1{
+            color: white;
+            font-weight: 500;
+        }
+    }
+}
+#photo-section{
+    .img-fluid{
+        min-height: 270px;
+        margin-bottom: .2rem;
+    }
+}
+#newsletter-section{
+    background-color: #050505;
+    color: $primary-color;
+    h1{
+        color: $primary-color;
+    }
+    .form-control{
+        box-shadow: none;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+#copyright-section{
+    background-color: rgb(72, 36, 143);
+    color: $primary-color;
+    .copy{
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+    .shagor{
+        margin: 0.1rem;
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: $f-weight;
+        font-family: cursive;
+    }
+}
+#about-section-header{
+    background-color: #000000;
+    color: $primary-color;
+    background-image: url(../../img/image1.jpeg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 200px;
+    h1{
+        color: $primary-color; 
+    }
+}
+#about-main-section{
+    .img-fluid{
+     width: 350px;
+     height: 350px;
+     border-radius: 50%;
+    }
+}
+#icon-section{
+    .bi{
+        font-size: $icon-size;
+    }
+}
+#testimonial-section{
+    .slick-next::before{
+        color: #000;
+    }
+    .slick-prev::before{
+        color: #000;
+    }
+}
+#services-section-header{
+    background-color: #000000;
+    color: $primary-color;
+    background-image: url(../../img/image1.jpeg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 200px;
+    h1{
+        color: $primary-color; 
+    }
+}
+#faq-section{
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+     }
+}
+#contact-section{
+    background-image: url(../../img/pc.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .col-md-8 .card{
+        
+        h3{
+            color: $primary-color;
+        }
+    }
+}
