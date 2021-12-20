@@ -1,0 +1,41 @@
+{
+  "name": "glozzom-agency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "prebuild:css": "node-sass src/scss/style.scss css/style.css ",
+    "build:css": "postcss -u autoprefixer -b 'last 2 versions' < css/style.css | postcss -u cssnano > css/style.min.css ",
+    "build": "npm run prebuild:css && npm run build:css ",
+    "watch": "watch 'npm run build' ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shagor-coder/glozzom-agency.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shagor-coder/glozzom-agency/issues"
+  },
+  "homepage": "https://github.com/shagor-coder/glozzom-agency#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.14",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "watch": "^1.0.2"
+  }
+}
+"scripts": {
+    "build:sass": "node-sass --output-style=expanded --source-map=true assets/scss/style.scss assets/css/style.css",
+    "prefix": "npm run build:sass && postcss assets/css/style.css --use=autoprefixer --output=assets/css/style.css",
+    "start": "onchange \"assets/scss/**/*.scss\" -- npm run prefix"
+  },
+  "scripts": {
+    "postcss": "postcss --config postcss.json"
+  }
