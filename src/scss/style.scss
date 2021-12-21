@@ -21,56 +21,103 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 a,
 li,
 button,
 input {
   font-family: 'Josefin Sans', sans-serif;
 }
+a:active,
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+p {
+  color: rgba(255, 255, 255, 0.85);
+}
 .container {
   max-width: 1440px;
 }
+// Resseting Bootstrap 5 Button Colors
+.btn {
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+.mxw-600 {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mxw-nm-600 {
+  max-width: 600px;
+}
 
 #nav {
-  background: rgba(10, 50, 73, 0.911);
-  z-index: 9999;
-  position: sticky;
+  z-index: 100;
   top: 0;
   padding-top: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
-  i {
-    padding: 5px;
-    color: $primary-color;
-  }
-  .navbar-toggler:focus {
-    box-shadow: none;
-  }
   .navbar-brand {
-    .d-inline {
+    .logo {
       text-decoration: none;
       color: white;
     }
+    &:hover {
+      text-decoration: none;
+    }
   }
-  .navbar-brand:hover {
-    text-decoration: none;
+  .navbar-toggler {
+    i {
+      color: $primary-color;
+    }
+    &:focus {
+      box-shadow: none;
+    }
   }
   .nav-item {
     padding-left: 1rem;
+    .nav-link {
+      color: $primary-color;
+      font-size: 1rem;
+      font-weight: 400;
+      transition: all 0.2s;
+
+      &:hover,
+      &:active,
+      &:focus-visible {
+        color: #011a41;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
   }
-  .nav-link:hover {
-    text-decoration: none;
-  }
-  .nav-link:focus {
-    font-weight: bold;
-  }
-  .container a {
-    color: white;
-  }
-  .nav-item .nav-link {
-    color: $primary-color !important;
-    font-size: 1rem;
-    font-weight: 400;
+  &.active {
+    background-color: #ffffff;
+    .navbar-brand {
+      .logo {
+        color: #000000;
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: rgba(0, 0, 0, 0.85);
+        &:hover,
+        &:active,
+        &:focus-visible {
+          color: #000;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 #carousel-section {
@@ -80,6 +127,11 @@ input {
   .img-fluid {
     width: 100%;
     height: 60vh;
+  }
+  .lead {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .carousel-caption {
     .btn {
@@ -112,7 +164,7 @@ input {
 }
 #get-section {
   padding-bottom: $icon-size;
-  background-image: url(../../img/image5.jpeg);
+  background-image: url('/img/image5.jpeg');
   background-size: cover;
   background-color: #000000b4;
   background-position: center top;
@@ -122,6 +174,9 @@ input {
   min-height: 385px;
   .mt {
     margin-top: 70px;
+    color: $primary-color;
+  }
+  .lead {
     color: $primary-color;
   }
   @media (max-width: 575px) {
@@ -137,6 +192,9 @@ input {
       font-weight: 450;
     }
   }
+  .lead {
+    color: rgba(0, 0, 0, 0.507);
+  }
   @media (max-width: 767px) {
     .col-md-6 {
       text-align: center;
@@ -148,7 +206,7 @@ input {
 }
 
 #video-section {
-  background: url(../../img/image6.jpeg);
+  background: url('/img/image6.jpeg');
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.507);
   background-position: center top;
@@ -169,11 +227,35 @@ input {
   }
 }
 #photo-section {
-  .img-fluid {
-    min-height: 270px;
-    margin-bottom: 0.2rem;
+  .col-md-4 {
+    a {
+      position: relative;
+      object-fit: cover;
+      width: 100%;
+      display: block;
+      // height: 270px;
+      min-height: 270px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      .img-fluid {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        transition: all 0.2s;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
   }
 }
+// .uk-lightbox-panel {
+//   position: relative;
+//   z-index: 9999;
+// }
 #newsletter-section {
   background: rgb(10, 4, 44);
   color: $primary-color;
@@ -201,6 +283,7 @@ input {
     font-family: cursive;
   }
 }
+//About Page
 #about-section-header {
   background-color: #000000;
   color: $primary-color;
@@ -208,7 +291,9 @@ input {
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
-  height: 200px;
+  min-height: 500px;
+  display: flex;
+
   h1 {
     color: $primary-color;
   }
@@ -219,6 +304,9 @@ input {
     height: 350px;
     border-radius: 50%;
   }
+  p {
+    color: rgba(0, 0, 0, 0.85);
+  }
 }
 #icon-section {
   .bi {
@@ -226,6 +314,9 @@ input {
   }
 }
 #testimonial-section {
+  p {
+    color: rgba(0, 0, 0, 0.85);
+  }
   .slick-next::before {
     color: #000;
   }
@@ -236,30 +327,51 @@ input {
 #services-section-header {
   background-color: #000000;
   color: $primary-color;
-  background-image: url(../../img/image1.jpeg);
+  background-image: url('/img/image1.jpeg');
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
-  height: 200px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
   h1 {
     color: $primary-color;
   }
 }
 #faq-section {
+  p {
+    color: rgba(0, 0, 0, 0.85);
+  }
   a {
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
   }
+  .collapse {
+    padding: 1rem;
+  }
+}
+#blog-section {
+  .card {
+    p {
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
 }
 #contact-section {
-  background-image: url(../../img/pc.jpeg);
+  background-image: url('/img/pc.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   .col-md-8 .card {
     h3 {
-      color: $primary-color;
+      color: rgba(0, 0, 0, 0.85);
     }
+  }
+  p {
+    color: rgba(0, 0, 0, 0.85);
+  }
+  textarea {
+    min-height: 185px;
   }
 }

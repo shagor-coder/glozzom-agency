@@ -1,333 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="src/css/slick.css">
-        <link rel="stylesheet" href="src/css/slick-theme.css">
-        <link rel="stylesheet" href="src/css/uikit.min.css">
-        <link rel="stylesheet" href="src/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" integrity="sha512-YBSrHBAMjFhWHodf0RF58XB/x9lmuwBtyJv1LWDHQa1nOaWNXfG3Etc/lEXfW+qBx8ne79JnzccDs59je/ccVA==" crossorigin="anonymous" />
-        <link rel="shortcut icon" href="./img/369.png" type="image/x-icon">
-        <link rel="stylesheet" href="dist/style.css">
-        <title>Glozzom</title>
-    </head>
-<body>
-
-    <!--About Page-->
-    <!--Nav Section uk-sticky="top: 200;cls-active: uk-navbar-transparent; animation: uk-animation-slide-top;">-->
-
-    
-    <nav id="nav" class="navbar navbar-expand-md px-0">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img class="img-fluid rounded-circle mb-1" width="50" height="50" src="./img/369.png" alt="glozzom">
-                <h3 class="d-inline">Glozzom</h3>
-            </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
-                <i class="bi bi-menu-button-wide"></i>
-            </button>
-            <div id="navBar" class="collapse navbar-collapse text-">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link  active" href="about.html">About Us</a></li>
-                    <li class="nav-item active"><a class="nav-link active" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item me-1"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/slick.css" />
+    <link rel="stylesheet" href="src/css/slick-theme.css" />
+    <link rel="stylesheet" href="src/css/uikit.min.css" />
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css"
+      integrity="sha512-YBSrHBAMjFhWHodf0RF58XB/x9lmuwBtyJv1LWDHQa1nOaWNXfG3Etc/lEXfW+qBx8ne79JnzccDs59je/ccVA=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./img/369.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SHA Agency | Services</title>
+  </head>
+  <body>
+    <!--  Navbar Start   -->
+    <nav id="nav" class="navbar navbar-expand-md fixed-top px-0">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h3 class="logo">SHA</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navBar"
+        >
+          <i class="bi bi-menu-button-wide"></i>
+        </button>
+        <div id="navBar" class="collapse navbar-collapse text-">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-<!--Nav Section Ends Here-->
+    <!--Nabar Ends-->
 
-<!--Services Header-->
+    <!--Services Header-->
 
     <section id="services-section-header" class="text-center py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="mt-4">Services</h1>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, veniam.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="mt-4">Services</h1>
+            <p class="lead mxw-600">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              veniam.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--Services Main-->
 
     <!--Price Table-->
     <section id="price-table-section" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h3>Service Plan One</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">
-                                <h3>$59/Month</h3>
-                                <div class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sequi.
-                                </div>
-                            </div>
-                            <div class="list-group text-start">
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature One
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Two
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Three
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Four
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Five
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Six
-                                </li>
-                            </div>
-                            <div class="d-grid">
-                                <button class="btn btn-primary mt-2">Order Now</button>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <h5 class="text-muted">1 Year Plan</h5>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Service Plan One</h3>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>$59/Month</h3>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet, sequi.
+                  </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h3>Service Plan Two</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">
-                                <h3>$99/Month</h3>
-                                <div class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sequi.
-                                </div>
-                            </div>
-                            <div class="list-group text-start">
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature One
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Two
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Three
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Four
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Five
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Six
-                                </li>
-                            </div>
-                            <div class="d-grid">
-                                <button class="btn btn-primary mt-2">Order Now</button>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <h5 class="text-muted">1 Year Plan</h5>
-                        </div>
-                    </div>
+                <div class="list-group text-start">
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature One
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Two
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Three
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Four
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Five
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Six
+                  </li>
                 </div>
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <h3>Service Plan Three</h3>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title">
-                                <h3>$139/Month</h3>
-                                <div class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sequi.
-                                </div>
-                            </div>
-                            <div class="list-group text-start">
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature One
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Two
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Three
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Four
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Five
-                                </li>
-                                <li class="list-group-item">
-                                    <i class="bi bi-check"></i>
-                                    Feature Six
-                                </li>
-                            </div>
-                            <div class="d-grid">
-                                <button class="btn btn-primary mt-2">Order Now</button>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <h5 class="text-muted">1 Year Plan</h5>
-                        </div>
-                    </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary mt-2">Order Now</button>
                 </div>
+              </div>
+              <div class="card-footer">
+                <h5 class="text-muted">1 Year Plan</h5>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Service Plan Two</h3>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>$99/Month</h3>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet, sequi.
+                  </div>
+                </div>
+                <div class="list-group text-start">
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature One
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Two
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Three
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Four
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Five
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Six
+                  </li>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary mt-2">Order Now</button>
+                </div>
+              </div>
+              <div class="card-footer">
+                <h5 class="text-muted">1 Year Plan</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Service Plan Three</h3>
+              </div>
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>$139/Month</h3>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet, sequi.
+                  </div>
+                </div>
+                <div class="list-group text-start">
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature One
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Two
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Three
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Four
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Five
+                  </li>
+                  <li class="list-group-item">
+                    <i class="bi bi-check"></i>
+                    Feature Six
+                  </li>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary mt-2">Order Now</button>
+                </div>
+              </div>
+              <div class="card-footer">
+                <h5 class="text-muted">1 Year Plan</h5>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--Price Table Ends Here-->
 
     <!--FAQ Section-->
     <section id="faq-section" class="py-5 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h1 class="text-light">Frequently Asked Questions</h1>
-                </div>
-            </div>
-
-
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <div class="card mt-1">
-                            <div class="card-header" id="headingOne">
-                                <a class="text-unstyled" data-bs-toggle="collapse" data-bs-target="#collapseOne" href="#collapseOne">
-                                        Question One
-                                </a>
-                            </div>
-                            <div class="collapse" id="collapseOne" data-bs-parent="#faq-section">
-                                <p class="lead">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, tempora nostrum! Ipsum, excepturi explicabo? Impedit similique quas exercitationem enim praesentium.
-                                </p>    
-                            </div>
-                        </div>
-                        <div class="card mt-1">
-                            <div class="card-header" id="headingTwo">
-                                
-                                    <a data-bs-toggle="collapse" data-bs-target="#collapseTwo" href="#collapseTwo">
-                                        Question Two
-                                    </a>
-                                
-                            </div>
-                            <div class="collapse" id="collapseTwo" data-bs-parent="#faq-section">
-                                <p class="lead">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, tempora nostrum! Ipsum, excepturi explicabo? Impedit similique quas exercitationem enim praesentium.
-                                </p>    
-                            </div>
-                        </div>
-                        <div class="card mt-1">
-                            <div class="card-header" id="headingThree">
-                                
-                                    <a class="text-unstyled" data-bs-toggle="collapse" data-bs-target="#collapseThree" href="#collapseThree">
-                                            Question Three
-                                        </a>
-                                
-                            </div>
-                            <div class="collapse" id="collapseThree" data-bs-parent="#faq-section">
-                                    <p class="lead">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, tempora nostrum! Ipsum, excepturi explicabo? Impedit similique quas exercitationem enim praesentium.
-                                    </p>    
-                                </div>
-                            </div>
-                        </div>
-                    <div class="col-md-6">
-                        <div class="card mt-1">
-                            <div class="card-header" id="headingFour">
-                                <a class="text-unstyled" data-bs-toggle="collapse" data-bs-target="#collapseFour" href="#collapseFour">
-                                        Question Four
-                                </a>
-                            </div>
-                            <div class="collapse" id="collapseFour" data-bs-parent="#faq-section">
-                                <p class="lead">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, tempora nostrum! Ipsum, excepturi explicabo? Impedit similique quas exercitationem enim praesentium.
-                                </p>    
-                            </div>
-                        </div>
-                        <div class="card mt-1">
-                            <div class="card-header" id="headingFive">
-                                
-                                    <a class="text-unstyled" data-bs-toggle="collapse" data-bs-target="#collapseFive" href="#collapseFive">
-                                        Question Five
-                                    </a>
-                                
-                            </div>
-                            <div class="collapse" id="collapseFive" data-bs-parent="#faq-section">
-                                <p class="lead">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, tempora nostrum! Ipsum, excepturi explicabo? Impedit similique quas exercitationem enim praesentium.
-                                </p>    
-                            </div>
-                        </div>
-                        <div class="card mt-1">
-                            <div class="card-header" id="headingSix">
-                                <a class="text-unstyled" data-bs-toggle="collapse" data-bs-target="#collapseSix" href="#collapseSix">
-                                            Question Six
-                                </a>
-                            </div>
-                            <div class="collapse" id="collapseSix" data-bs-parent="#faq-section">
-                                    <p class="lead">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, tempora nostrum! Ipsum, excepturi explicabo? Impedit similique quas exercitationem enim praesentium.
-                                    </p>    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-light">Frequently Asked Questions</h1>
+          </div>
         </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header" id="headingOne">
+                <a
+                  class="text-unstyled"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  href="#collapseOne"
+                >
+                  Question One
+                </a>
+              </div>
+              <div
+                class="collapse"
+                id="collapseOne"
+                data-bs-parent="#faq-section"
+              >
+                <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea,
+                  tempora nostrum! Ipsum, excepturi explicabo? Impedit similique
+                  quas exercitationem enim praesentium.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-1">
+              <div class="card-header" id="headingTwo">
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  href="#collapseTwo"
+                >
+                  Question Two
+                </a>
+              </div>
+              <div
+                class="collapse"
+                id="collapseTwo"
+                data-bs-parent="#faq-section"
+              >
+                <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea,
+                  tempora nostrum! Ipsum, excepturi explicabo? Impedit similique
+                  quas exercitationem enim praesentium.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-1">
+              <div class="card-header" id="headingThree">
+                <a
+                  class="text-unstyled"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  href="#collapseThree"
+                >
+                  Question Three
+                </a>
+              </div>
+              <div
+                class="collapse"
+                id="collapseThree"
+                data-bs-parent="#faq-section"
+              >
+                <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea,
+                  tempora nostrum! Ipsum, excepturi explicabo? Impedit similique
+                  quas exercitationem enim praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mt-1">
+              <div class="card-header" id="headingFour">
+                <a
+                  class="text-unstyled"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  href="#collapseFour"
+                >
+                  Question Four
+                </a>
+              </div>
+              <div
+                class="collapse"
+                id="collapseFour"
+                data-bs-parent="#faq-section"
+              >
+                <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea,
+                  tempora nostrum! Ipsum, excepturi explicabo? Impedit similique
+                  quas exercitationem enim praesentium.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-1">
+              <div class="card-header" id="headingFive">
+                <a
+                  class="text-unstyled"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  href="#collapseFive"
+                >
+                  Question Five
+                </a>
+              </div>
+              <div
+                class="collapse"
+                id="collapseFive"
+                data-bs-parent="#faq-section"
+              >
+                <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea,
+                  tempora nostrum! Ipsum, excepturi explicabo? Impedit similique
+                  quas exercitationem enim praesentium.
+                </p>
+              </div>
+            </div>
+            <div class="card mt-1">
+              <div class="card-header" id="headingSix">
+                <a
+                  class="text-unstyled"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  href="#collapseSix"
+                >
+                  Question Six
+                </a>
+              </div>
+              <div
+                class="collapse"
+                id="collapseSix"
+                data-bs-parent="#faq-section"
+              >
+                <p class="lead">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea,
+                  tempora nostrum! Ipsum, excepturi explicabo? Impedit similique
+                  quas exercitationem enim praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--FAQ Section Ends Here-->
 
-
-        <!--Copyright Section-->
+    <!--Copyright Section-->
     <section id="copyright-section" class="text-center py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p class="lead copy">Copyright 2020 &copy; Glozzom</p>
-                    <p class="lead">
-                        All Rights Reseved :
-                        <a class="shagor" href="#">Shagor</a>
-                    </p>
-                </div>
-            </div>
-         </div> 
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead copy">&copy; Copyright 2022 SHA</p>
+            <p class="lead">
+              All Rights Reseved :
+              <a class="shagor" href="#">Shagor</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-     <!--Copyright Section Ends Here--> 
-     <script src="src/js/jquery-3.5.1.min.js"></script>
-     <script src="src/js/bootstrap.bundle.min.js"></script>
-     <script src="src/js/uikit.min.js"></script>
-     <script src="src/js/uikit-icons.min.js"></script>
-     <script src="src/fonts/slick.min.js"></script>
-     <script src="src/js/script.js"></script>
-</body>
+    <!--Copyright Section Ends Here-->
+    <script src="src/js/jquery-3.5.1.min.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/uikit.min.js"></script>
+    <script src="src/js/uikit-icons.min.js"></script>
+    <script src="src/fonts/slick.min.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
 </html>
