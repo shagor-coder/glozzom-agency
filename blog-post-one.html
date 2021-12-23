@@ -15,7 +15,7 @@
     />
     <link rel="shortcut icon" href="./img/369.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>SHA Agency | Blog Page</title>
+    <title>SHA Agency | Single Blog Page</title>
   </head>
   <body>
     <!--  Navbar Start   -->
@@ -43,7 +43,7 @@
               <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="blog.html">Blog</a>
+              <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item me-1">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -55,26 +55,122 @@
 
     <!--Nabar Ends-->
 
-    <!--Services Header-->
-
-    <section id="services-section-header" class="text-center py-4">
+    <!-- Single Blog Layout -->
+    <section id="single-blog" class="single-blog mt-5 pt-5 pb-5">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h1 class="mt-4">Blog</h1>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
-              veniam.
+          <div class="col-lg-8 col-md-7 col-12 main-blog">
+            <div class="featured-img">
+              <img class="img-fluid" src="./img/pc.jpeg" alt="img" />
+            </div>
+            <h1 class="blog-title">Blog Post One</h1>
+            <p><small class="text-muted">Written By Shagor</small></p>
+            <p>
+              <small class="text-muted">Date: 20/12/2021 Tuesday</small>
             </p>
+            <article class="blog-article">
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore a repellat mollitia! Unde beatae aspernatur atque eius
+                dolore esse veniam.
+              </p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore a repellat mollitia! Unde beatae aspernatur atque eius
+                dolore esse veniam.
+              </p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Tempore a repellat mollitia! Unde beatae aspernatur atque eius
+                dolore esse veniam.
+              </p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                accusamus quam magni saepe est! Dolorum asperiores repellat
+                accusamus animi perspiciatis modi ab officia reiciendis sunt a
+                voluptatum, in laboriosam dolorem autem enim quo odit explicabo
+                quas quaerat dignissimos, totam facilis minus vel dolores?
+                Dignissimos dicta impedit facilis? Molestiae, quod rerum.
+              </p>
+              <ul>
+                <li>Point One</li>
+                <li>Point Two</li>
+                <li>Point Three</li>
+              </ul>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                accusamus quam magni saepe est! Dolorum asperiores repellat
+                accusamus animi perspiciatis modi ab officia reiciendis sunt a
+                voluptatum, in laboriosam dolorem autem enim quo odit explicabo
+                quas quaerat dignissimos, totam facilis minus vel dolores?
+                Dignissimos dicta impedit facilis? Molestiae, quod rerum.
+              </p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                accusamus quam magni saepe est! Dolorum asperiores repellat
+                accusamus animi perspiciatis modi ab officia reiciendis sunt a
+                voluptatum, in laboriosam dolorem autem enim quo odit explicabo
+                quas quaerat dignissimos, totam facilis minus vel dolores?
+                Dignissimos dicta impedit facilis? Molestiae, quod rerum.
+              </p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-5 col-12 sidebar">
+            <div class="recent-articles">
+              <a href="#" class="author">
+                <img class="img-fluid" src="./img/image4.jpeg" alt="" />
+                <div class="name">
+                  <p>Md Shagor Hossain</p>
+                </div>
+              </a>
+              <ul class="recent-articles-list">
+                <li>
+                  <div class="article-img">
+                    <img class="img-fluid" src="./img/image5.jpeg" alt="" />
+                  </div>
+                  <div class="article-title">
+                    <h5>
+                      <a href="#"> How to design professional Websites </a>
+                    </h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-img">
+                    <img class="img-fluid" src="./img/image3.jpeg" alt="" />
+                  </div>
+                  <div class="article-title">
+                    <h5>
+                      <a href="#"> How to design professional Websites </a>
+                    </h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="article-img">
+                    <img class="img-fluid" src="./img/image1.jpeg" alt="" />
+                  </div>
+                  <div class="article-title">
+                    <h5>
+                      <a href="#"> How to design professional Websites </a>
+                    </h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Single Blog Layout End -->
 
-    <!--Blog Section-->
-    <section id="blog-section" class="py-5">
+    <!-- More Blog Layout -->
+    <section id="read-more" class="read-more py-5">
       <div class="container">
         <div class="row">
+          <div class="col-12">
+            <h2>Read More...</h2>
+          </div>
+        </div>
+        <div class="row read-more-cards">
           <div class="col-md-4 mt-1">
             <div class="card">
               <div class="card-img-top">
@@ -91,11 +187,7 @@
                 <p>
                   <small class="text-muted">Date: 20/12/2021 Tuesday</small>
                 </p>
-                <p class="lead mt-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis vitae fugiat labore aspernatur iste cum repellendus
-                  dolorem magni facilis enim!
-                </p>
+                <p class="lead mt-2">Lorem ipsum dolor sit amet...</p>
               </div>
               <div class="card-footer">
                 <div class="d-grid">
@@ -122,11 +214,7 @@
                 <p>
                   <small class="text-muted">Date: 20/12/2021 Tuesday</small>
                 </p>
-                <p class="lead mt-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis vitae fugiat labore aspernatur iste cum repellendus
-                  dolorem magni facilis enim!
-                </p>
+                <p class="lead mt-2">Lorem ipsum dolor sit amet...</p>
               </div>
               <div class="card-footer">
                 <div class="d-grid">
@@ -151,100 +239,7 @@
                 <p>
                   <small class="text-muted">Date: 20/12/2021 Tuesday</small>
                 </p>
-                <p class="lead mt-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis vitae fugiat labore aspernatur iste cum repellendus
-                  dolorem magni facilis enim!
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="d-grid">
-                  <a class="btn btn-secondary" href="#"> Read More.. </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-md-4 mt-1">
-            <div class="card">
-              <div class="card-img-top">
-                <img
-                  class="img-fluid rounded-2"
-                  src="./img/image1.jpeg"
-                  alt=""
-                />
-              </div>
-
-              <div class="card-body">
-                <h5>Blog Post Four</h5>
-                <p><small class="card-text">Written By Shagor</small></p>
-                <p>
-                  <small class="text-muted">Date: 20/12/2021 Tuesday</small>
-                </p>
-                <p class="lead mt-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis vitae fugiat labore aspernatur iste cum repellendus
-                  dolorem magni facilis enim!
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="d-grid">
-                  <a class="btn btn-secondary" href="#"> Read More.. </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-1">
-            <div class="card">
-              <div class="card-img-top">
-                <img
-                  class="img-fluid rounded-2"
-                  src="./img/image5.jpeg"
-                  alt=""
-                />
-              </div>
-
-              <div class="card-body">
-                <h5>Blog Post Five</h5>
-                <p><small class="card-text">Written By Shagor</small></p>
-                <p>
-                  <small class="text-muted">Date: 20/12/2021 Tuesday</small>
-                </p>
-                <p class="lead mt-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis vitae fugiat labore aspernatur iste cum repellendus
-                  dolorem magni facilis enim!
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="d-grid">
-                  <a class="btn btn-secondary" href="#"> Read More.. </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-1">
-            <div class="card">
-              <div class="card-img-top">
-                <img
-                  class="img-fluid rounded-2"
-                  src="./img/image3.jpeg"
-                  alt=""
-                />
-              </div>
-
-              <div class="card-body">
-                <h5>Blog Post Six</h5>
-                <p><small class="card-text">Written By Shagor</small></p>
-                <p>
-                  <small class="text-muted">Date: 20/12/2021 Tuesday</small>
-                </p>
-                <p class="lead mt-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Corporis vitae fugiat labore aspernatur iste cum repellendus
-                  dolorem magni facilis enim!
-                </p>
+                <p class="lead mt-2">Lorem ipsum dolor sit amet...</p>
               </div>
               <div class="card-footer">
                 <div class="d-grid">
@@ -256,7 +251,7 @@
         </div>
       </div>
     </section>
-    <!--Blog Section Ends Here-->
+    <!-- More Blog Layout End -->
 
     <!--Copyright Section-->
     <section id="copyright-section" class="text-center py-3">

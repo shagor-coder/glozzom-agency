@@ -3,5 +3,16 @@ const navBar = document.querySelector('.navbar')
 window.addEventListener('scroll', function () {
   navBar.classList.toggle('active', scrollY > 50)
 })
-console.log(navBar)
-$('.slider').slick({ infinite: !0, slideToShow: 1, slideToScroll: 1 })
+// Checking The active link
+const links = document.querySelectorAll('.nav-item')
+const addActive = function () {
+  links.forEach((link) => {
+    link.classList.remove('active')
+    this.classList.add('active')
+  })
+}
+links.forEach((link) => {
+  link.addEventListener('click', addActive)
+})
+
+$('.slider').slick({ infinite: true, slideToShow: 1, slideToScroll: 1 })
